@@ -1,0 +1,77 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa; /* Light background for a modern look */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* Increased size for visibility */
+    font-weight: bold;
+    color: #000; /* Set logo color to black */
+  }
+  
+  .logoLink {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transformation */
+    padding: 0.5rem 0;
+  }
+  
+  .navLink:hover {
+    color: #007bff; /* Change to primary color on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+  }
+  
+  .userIcon {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .userLink {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .userLink:hover {
+    color: #007bff; /* Change to primary color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .navLinks {
+      flex-direction: column; /* Stack links on small screens */
+      gap: 1rem; /* Reduce gap between links */
+      margin-top: 1rem; /* Add space between logo and links */
+      width: 100%; /* Ensure it takes full width */
+      align-items: center; /* Center align items */
+    }
+  
+    .navLink {
+      font-size: 1rem; /* Slightly smaller font size */
+    }
+  }
+  

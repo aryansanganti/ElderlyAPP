@@ -1,0 +1,77 @@
+.button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem; /* Add spacing between buttons */
+}
+
+.button.primary {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button.primary:hover {
+  background-color: #555;
+  transform: scale(1.07);
+}
+
+.button.secondary {
+  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+  color: #000;
+  border: 2px solid #000;
+}
+
+.button.secondary:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.07);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+  height: 280px; /* Adjust height for better proportions */
+  border: 1px solid #606060; /* Softer border color */
+  background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+  
+  
+  @media (max-width: 768px) {
+    .button {
+      width: 100%; 
+    }
+    
+    .card {
+      width: 90%; 
+      height: auto; 
+      margin-bottom: 1rem; 
+    }
+  
+    .cardContainer {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: space-around; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+  }
+  
